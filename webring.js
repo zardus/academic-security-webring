@@ -75,6 +75,25 @@ function displayError(message) {
 function displayWebring() {
     const member = members[currentIndex];
     document.getElementById('site-name').textContent = member.name;
+
+    // Set alt text for prev/next links
+    const prevIndex = (currentIndex - 1 + members.length) % members.length;
+    const nextIndex = (currentIndex + 1) % members.length;
+
+    const prevLink = document.getElementById('prev-link');
+    const nextLink = document.getElementById('next-link');
+
+    if (prevLink) {
+        const prevText = `Previous: ${members[prevIndex].name}`;
+        prevLink.title = prevText;
+        prevLink.setAttribute('aria-label', prevText);
+    }
+
+    if (nextLink) {
+        const nextText = `Next: ${members[nextIndex].name}`;
+        nextLink.title = nextText;
+        nextLink.setAttribute('aria-label', nextText);
+    }
 }
 
 // Navigation functions
