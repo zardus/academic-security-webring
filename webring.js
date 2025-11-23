@@ -93,16 +93,6 @@ function next() {
     navigate(targetIndex);
 }
 
-function skipPrev() {
-    const targetIndex = (currentIndex - 2 + members.length) % members.length;
-    navigate(targetIndex);
-}
-
-function skipNext() {
-    const targetIndex = (currentIndex + 2) % members.length;
-    navigate(targetIndex);
-}
-
 function random() {
     let randomIndex;
     do {
