@@ -25,18 +25,30 @@
             border: 3px double #000000;
         }
 
+        .logo-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-container img {
+            max-width: 120px;
+            height: auto;
+        }
+
         h1 {
             text-align: center;
             color: #000000;
-            margin-bottom: 10px;
-            font-size: 24px;
+            margin-bottom: 8px;
+            font-size: 26px;
+            font-weight: bold;
         }
 
         .subtitle {
             text-align: center;
             margin-bottom: 30px;
-            font-size: 14px;
-            color: #666;
+            font-size: 15px;
+            color: #555;
+            font-style: italic;
         }
 
         .member-list {
@@ -44,8 +56,8 @@
         }
 
         .member-item {
-            padding: 15px;
-            margin-bottom: 10px;
+            padding: 12px 15px;
+            margin-bottom: 8px;
             border: 2px solid #000000;
             background-color: #e0e0e0;
         }
@@ -57,7 +69,6 @@
         .member-name {
             font-weight: bold;
             font-size: 16px;
-            margin-bottom: 5px;
         }
 
         .member-name a {
@@ -71,11 +82,6 @@
 
         .member-name a:hover {
             color: #ee0000;
-        }
-
-        .member-owner {
-            color: #666;
-            font-size: 14px;
         }
 
         .stats {
@@ -101,6 +107,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo-container">
+            <a href="https://www.wannapik.com/vectors/73020">
+                <img src="logo.png" alt="Logo design by Wannapik Studio.">
+            </a>
+        </div>
         <h1>🔒 Academic Security Webring 🔒</h1>
         <div class="subtitle">Member Directory</div>
 
@@ -134,7 +145,6 @@
                         <div class="member-name">
                             <a href="${member.url}" target="_blank">${member.name}</a>
                         </div>
-                        <div class="member-owner">Owned by: ${member.owner}</div>
                     `;
                     listElement.appendChild(li);
                 });
