@@ -66,9 +66,17 @@
             background-color: #d0d0d0;
         }
 
+        .member-index {
+            display: inline-block;
+            width: 40px;
+            font-weight: bold;
+            color: #666;
+        }
+
         .member-name {
             font-weight: bold;
             font-size: 16px;
+            margin-bottom: 4px;
         }
 
         .member-name a {
@@ -81,6 +89,35 @@
         }
 
         .member-name a:hover {
+            color: #ee0000;
+        }
+
+        .member-url {
+            font-size: 13px;
+            color: #666;
+            font-family: monospace;
+        }
+
+        .join-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border: 2px solid #000000;
+            text-align: center;
+        }
+
+        .join-section h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .join-section a {
+            color: #0000ee;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .join-section a:hover {
             color: #ee0000;
         }
 
@@ -108,6 +145,11 @@
             <li>Loading members...</li>
         </ul>
 
+        <div class="join-section">
+            <h2>Want to Join?</h2>
+            <p>Add your site to the webring by submitting a pull request to the <a href="https://github.com/yans/academic-security-webring" target="_blank">GitHub repository</a>!</p>
+        </div>
+
         <div class="stats" id="stats">
             Total members: <span id="member-count">0</span>
         </div>
@@ -127,9 +169,11 @@
                     const li = document.createElement('li');
                     li.className = 'member-item';
                     li.innerHTML = `
+                        <span class="member-index">#${index + 1}</span>
                         <div class="member-name">
                             <a href="${member.url}" target="_blank">${member.name}</a>
                         </div>
+                        <div class="member-url">${member.url}</div>
                     `;
                     listElement.appendChild(li);
                 });
