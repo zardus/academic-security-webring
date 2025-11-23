@@ -53,7 +53,7 @@ async function init() {
         );
 
         if (currentIndex === -1) {
-            const editUrl = 'https://github.com/USERNAME/REPO/edit/main/members.json';
+            const editUrl = 'https://github.com/zardus/academic-security-webring/edit/main/members.json';
             displayError(`Site not found. <a href="${editUrl}" target="_top">Add yourself here!</a>`);
             return;
         }

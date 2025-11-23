@@ -2,7 +2,7 @@
   "_instructions": [
 	"To join:",
 	"1) Add your site below",
-	"2) Add this iframe to your site: <iframe src='https://USERNAME.github.io/academic-security-webring/' width='100%' height='150' frameborder='0'></iframe>",
+	"2) Add this iframe to your site: <iframe src='https://yancomm.net/academic-security-webring/' width='100%' height='150' frameborder='0'></iframe>",
 	"Note: The webring will auto-detect your site from the embedding page. You can still use ?site=YOUR_SITE_URL if needed."
   ],
   "members": [
