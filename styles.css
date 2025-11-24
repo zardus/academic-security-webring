@@ -89,12 +89,15 @@ body {
 }
 
 .webring-nav {
-    margin-top: 15px;
     padding: 10px;
     border: 2px solid #000000;
     background-color: #e0e0e0;
     font-size: 14px;
     line-height: 1.8;
+}
+
+.webring-links {
+    margin-top: 10px;
 }
 
 .webring-nav a {
