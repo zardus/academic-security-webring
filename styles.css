@@ -11,7 +11,7 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 100%;
     background-color: transparent;
     color: #000000;
     display: flex;
@@ -22,23 +22,27 @@ body {
 #webring-container {
     width: 100%;
     max-height: 100%;
-    padding: 10px;
-    border: 3px double #000000;
+    padding: 3%;
+    border: 0.2em double #000000;
     background-color: #ffffff;
     text-align: center;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 4%;
     box-sizing: border-box;
 }
 
 .webring-icon {
     flex-shrink: 0;
+    width: 15%;
+    min-width: 2em;
+    max-width: 5em;
 }
 
 .webring-icon img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     display: block;
 }
 
@@ -48,14 +52,14 @@ body {
 }
 
 .webring-header {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 2px solid #000000;
+    margin-bottom: 0.7em;
+    padding: 0.7em;
+    border: 0.15em solid #000000;
     background-color: #e0e0e0;
 }
 
 .webring-title {
-    font-size: 16px;
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
@@ -79,8 +83,8 @@ body {
 }
 
 .webring-info {
-    margin: 15px 0;
-    font-size: 14px;
+    margin: 1em 0;
+    font-size: 1em;
 }
 
 #site-name {
@@ -89,15 +93,15 @@ body {
 }
 
 .webring-nav {
-    padding: 10px;
-    border: 2px solid #000000;
+    padding: 0.7em;
+    border: 0.15em solid #000000;
     background-color: #e0e0e0;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.8;
 }
 
 .webring-links {
-    margin-top: 10px;
+    margin-top: 0.7em;
 }
 
 .webring-nav a {
@@ -119,29 +123,8 @@ body {
 .error {
     color: #cc0000;
     font-weight: bold;
-    padding: 20px;
-    border: 2px solid #cc0000;
+    padding: 1.4em;
+    border: 0.15em solid #cc0000;
     background-color: #ffe0e0;
-    margin: 10px;
-}
-
-/* Retro aesthetic touches */
-@media (max-width: 600px) {
-    body {
-        font-size: 12px;
-    }
-
-    .webring-title {
-        font-size: 14px;
-    }
-
-    .webring-nav {
-        font-size: 12px;
-        line-height: 2;
-    }
-
-    .webring-icon img {
-        width: 60px;
-        height: 60px;
-    }
+    margin: 0.7em;
 }
